@@ -45,5 +45,8 @@ const quotes = [
     const author = document.querySelector("#quote span:last-child");
     const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
     
-    quote.innerText = todaysQuote.quote;    
+    quote.innerText = `${todaysQuote.quote} - `;    
     author.innerText = todaysQuote.author;
+
+    quote.style.color = "#3498db";
+    author.style.color = "#3498db";
